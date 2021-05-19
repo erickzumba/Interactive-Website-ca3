@@ -16,7 +16,7 @@ myInput.onblur = function() {
 }
 
 // When the user starts to type something inside the password field
-myInput.onkeyup = function() {
+myInput.onkeyup = function(){
   // Validate lowercase letters
   var lowerCaseLetters = /[a-z]/g;
   if(myInput.value.match(lowerCaseLetters)) {  
@@ -56,7 +56,7 @@ myInput.onkeyup = function() {
    number.classList.remove("valid");
    number.classList.add("invalid");
  }
- 
+
   // Validate length
   if(myInput.value.length >= 8) {
     length.classList.remove("invalid");
@@ -66,3 +66,4 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
+

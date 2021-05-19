@@ -81,12 +81,23 @@ body{
         margin: 0;
         padding: 0;
         background-image: url(../images/food.jpg);
-        background-size: cover;
+        background-size:auto;
         background-position: center; 
         background-repeat: no-repeat;
         background-attachment: fixed;        
         font-family: sans-serif;
     }
+    .containerbox{
+        width: 400px;
+        height: 250px;     
+        left: 80%;       
+        position:absolute;
+        padding: 100px 100px;
+        color: white;
+                
+    }
+    
+    
 
    
     
