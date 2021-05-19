@@ -5,8 +5,7 @@ body{
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    
+    background-attachment: fixed;    
     font-family: sans-serif;
     
     }
@@ -78,14 +77,16 @@ body{
         background: #ffc107;
         color: #000;
     }
-    .loginbox a{
-        text-decoration: none;
-        font-size: 12px;
-        line-height: 20px;
-        color: darkgrey;
-    }
-    .loginbox a:hover{
-        color: #ffc107;
+    container{
+        margin: 0;
+        padding: 0;
+        background-image: url(../images/food.jpg);
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-attachment: fixed;        
+        font-family: sans-serif;
     }
 
+   
     
