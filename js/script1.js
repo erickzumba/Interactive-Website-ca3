@@ -46,17 +46,18 @@ $(document).ready(function(){
   var barbecue=12;
   var butterChicken=13;
   var spicyRoot=9;
-  var Creamy=14;
+  var creamy=14;
   var choco = 5;
   var tart = 3;
   var floating = 4;
   var water = 5;
-  var coca  = 4;
+  var coke  = 4;
   var cappuc = 4;
   var total = 0;
   var check = 1;
-  var sf;
+  var meal;
   var gw;
+  var quantity;
   var adder = document.querySelector("#getme");
     adder.addEventListener("click", getMe);
     var by = document.querySelector("#out");
@@ -65,17 +66,117 @@ $(document).ready(function(){
     cme.addEventListener("click", clearMe);
     function getMe() {
       meal = document.querySelector("#sf").value;
+      quantity = parseInt(document.querySelector("#entrybox").value);
+      gw = document.querySelector("#writeme");
+      if (Number.isNaN(quantity) === true) {
+        alert("Only Numbers !!! Or The Field is Empty");
+        check = 0;
+      }
+      else if (quantity<0) {
+        alert("Negative value!! ");
+        check = 0;
+      }
+      else{
+        check = 1;
+      }
+
       
     
       if (check == 1) {
+        
      
         switch (meal) {
           case "Roasted Stuffed Mushrooms":
-            var rt = roasted * nbsp;
-            gw.value += "Roasted Stuffed Mushrooms ";
+            var rt = roasted * quantity;
+            gw.value += "Roasted Stuffed Mushrooms "+"Quantity: "+quantity+"Price = "+rt+" €";
             total += rt;
+            quantity.value = "";
             
             break;
+            case "Beef Curry":
+              var rt = beef * quantity;
+              gw.value += "Beef Curry "+"Quantity: "+quantity+"Price = "+rt+" €";
+              total += rt;
+              quantity.value = "";
+              
+              break;
+              case "Barbecued Piri Piri Praws":
+                var rt = barbecue * quantity;
+                gw.value += "Barbecued Piri Piri Praws "+"Quantity: "+quantity+"Price = "+rt+" €";
+                total += rt;
+                quantity.value = "";
+                
+                break;
+                case "Butter Chicken with Naan":
+                var rt = butterChicken * quantity;
+                gw.value += "Butter Chicken with Naan "+"Quantity: "+quantity+"Price = "+rt+" €";
+                total += rt;
+                quantity.value = "";
+                
+                break;
+                case "Spicy root & Lentil Casserole":
+                var rt = spicyRoot * quantity;
+                gw.value += "Spicy root & Lentil Casserole"+"Quantity: "+quantity+"Price = "+rt+" €";
+                total += rt;
+                quantity.value = "";
+                
+                break;
+
+                case "Creamy courgette lasagne":
+                var rt = creamy * quantity;
+                gw.value += "Creamy courgette lasagne"+"Quantity: "+quantity+"Price = "+rt+" €";
+                total += rt;
+                quantity.value = "";
+                
+                break;
+                case "Chocolate Cake":
+                var rt = choco * quantity;
+                gw.value += "Chocolate Cake"+"Quantity: "+quantity+"Price = "+rt+" €";
+                total += rt;
+                quantity.value = "";
+                
+                break;
+
+                case "Treacle Tart":
+                var rt = tart * quantity;
+                gw.value += "Treacle Tart"+"Quantity: "+quantity+"Price = "+rt+" €";
+                total += rt;
+                quantity.value = "";
+                
+                break;
+
+                case "Floating Island":
+                  var rt = floating * quantity;
+                  gw.value += "Floating Island"+"Quantity: "+quantity+"Price = "+rt+" €";
+                  total += rt;
+                  quantity.value = "";
+                  
+                  break;
+
+                  case "Water":
+                  var rt = water * quantity;
+                  gw.value += "Water"+"Quantity: "+quantity+"Price = "+rt+" €";
+                  total += rt;
+                  quantity.value = "";
+                  
+                  break;
+                  case "Coca-Cola":
+                    var rt = coke * quantity;
+                    gw.value += "Water"+"Quantity: "+quantity+"Price = "+rt+" €";
+                    total += rt;
+                    quantity.value = "";
+                    
+                    break;
+
+                    case "Cappuccino":
+                    var rt = cappuc * quantity;
+                    gw.value += "Cappuccino"+"Quantity: "+quantity+"Price = "+rt+" €";
+                    total += rt;
+                    quantity.value = "";
+                    
+                    break;
+         
+         
          
         }
 
@@ -84,7 +185,7 @@ $(document).ready(function(){
 
     function checkOut() {
       gw.value += "--------------------------------------------------------------\r";
-      gw.value += "Your Total Bill Is = " + total + " £ Thanks For Shopping! \r";
+      gw.value += "Your Total Bill Is = " + total + " € Thanks For Shopping! \r";
       gw.value += "--------------------------------------------------------------\r";
       total = 0;
     }
