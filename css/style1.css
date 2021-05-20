@@ -15,16 +15,16 @@ body{
 table {
     border-collapse:initial;
     width: auto;    
-    color: whitesmoke;
+    color: orangered;
     table-layout: fixed;
     transform-box:initial;
   }
   
   th, td, tr{
-    padding: 8px;
+    padding: 6px;
     text-align:center;
-    border: 1px solid black;
-    background-color:transparent ;
+    border: 1px solid black;   
+    background-color: transparent;
     font-size: 20px;
    
     
@@ -59,12 +59,7 @@ container {
   width: 10%;
 }
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: 100%;     
-}
+
 .container [type="text"]:hover
     {
         cursor: pointer;
@@ -86,10 +81,30 @@ container {
         height: 130px;  
         width: 100px;
     }
-    
-    #close-CSS {
-        background-image: url("/images/roasted-stuffed-mushrooms-vegetarian.jpeg ");
-        background-size: 100px 130px;
-        height: 134px;  
-        width: 104px;
+    .bill {
+      margin-left: 23%;
+      margin-right: 20%;
+
     }
+
+    .bill1 {
+      margin-left: 33%;
+      margin-right: 20%;
+
+    }
+
+    #sf {
+      height: 48px;
+      border: 2px solid #b4b39d;
+      border-radius: 4px;
+    }
+
+    .bill2 {
+      margin-left: 67%;
+      position: relative;
+    }
+     .bill3 {
+      margin-left: 50%;
+      position: absolute;
+    }
+   

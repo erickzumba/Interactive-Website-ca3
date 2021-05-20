@@ -39,3 +39,55 @@ $(document).ready(function(){
    
     }
    });
+
+  
+  var roasted=10;
+  var beef=15;
+  var barbecue=12;
+  var butterChicken=13;
+  var spicyRoot=9;
+  var Creamy=14;
+  var choco = 5;
+  var tart = 3;
+  var floating = 4;
+  var water = 5;
+  var coca  = 4;
+  var cappuc = 4;
+  var total = 0;
+  var check = 1;
+  var sf;
+  var gw;
+  var adder = document.querySelector("#getme");
+    adder.addEventListener("click", getMe);
+    var by = document.querySelector("#out");
+    by.addEventListener("click", checkOut);
+    var cme = document.querySelector("#clr");
+    cme.addEventListener("click", clearMe);
+    function getMe() {
+      meal = document.querySelector("#sf").value;
+      
+    
+      if (check == 1) {
+     
+        switch (meal) {
+          case "Roasted Stuffed Mushrooms":
+            var rt = roasted * nbsp;
+            gw.value += "Roasted Stuffed Mushrooms ";
+            total += rt;
+            
+            break;
+         
+        }
+
+      }
+    }
+
+    function checkOut() {
+      gw.value += "--------------------------------------------------------------\r";
+      gw.value += "Your Total Bill Is = " + total + " £ Thanks For Shopping! \r";
+      gw.value += "--------------------------------------------------------------\r";
+      total = 0;
+    }
+    function clearMe () {
+      gw.value = "";
+    }
