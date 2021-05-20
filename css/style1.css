@@ -1,0 +1,95 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/lebistro.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+    font-family: sans-serif;
+    background-color:transparent;
+    
+    }
+
+table {
+    border-collapse:initial;
+    width: auto;    
+    color: whitesmoke;
+    table-layout: fixed;
+    transform-box:initial;
+  }
+  
+  th, td, tr{
+    padding: 8px;
+    text-align:center;
+    border: 1px solid black;
+    background-color:transparent ;
+    font-size: 20px;
+   
+    
+  }
+  
+
+.aside{
+    width: 200px;
+    height: 100px;
+    background:transparent;
+    color: #fff;    
+    top: 20%;
+    left: 85%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    
+}
+.menuTable{
+    top: 10%;
+    
+}
+.jumbotron{
+    color:white;
+    background-color:rgb(94, 90, 90);
+    width: fit-content;
+    min-height: fit-content;
+}
+container {
+  position: fixed;
+  width: 10%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;     
+}
+.container [type="text"]:hover
+    {
+        cursor: pointer;
+        background: #ffc107;
+        color: #000;
+        font-size: 20px;
+    }
+    button {
+        display: inline-block;
+        height: 134px;
+        padding: 0;
+        margin: 0;
+        vertical-align: top;
+        width: 104px;
+    }
+    
+    #close-image img {
+        display: block;
+        height: 130px;  
+        width: 100px;
+    }
+    
+    #close-CSS {
+        background-image: url("/images/roasted-stuffed-mushrooms-vegetarian.jpeg ");
+        background-size: 100px 130px;
+        height: 134px;  
+        width: 104px;
+    }
